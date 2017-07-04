@@ -53,8 +53,7 @@
 Google Plus team 衡量每個閱讀的展開（expands）、分享、+1、評論；以及每個使用者的評論、分享等等。
 這些是他們在服務時用來計算一個貼文的質量的指標。並且要注意，一個你可以將使用者分群、整合各個實驗統計資料的實驗框架（experiment framework）很重要。（參考 Rule 12）
 
-By being more liberal about gathering metrics, you can gain a broader picture of your system. Notice a problem? Add a metric to track it! Excited about some quantitative change on the last
-release? Add a metric to track it!
+透過更自由地收集指標，你能夠用更寬廣的視野來觀察你的系統。發現一個問題？增加一個指標追蹤它！對上一次釋出所造成的量化改變感到興奮？增加一個指標來追蹤它！
 
 ## Rule 3 - 選擇機器學習而非複雜的直覺（complex heuristic）
 

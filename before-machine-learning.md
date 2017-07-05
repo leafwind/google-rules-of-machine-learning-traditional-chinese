@@ -15,13 +15,19 @@
 > 反過來說，若是在很糟的環境，ML 甚至不一定會優於 heuristic
 
 舉例來說，如果你正在替 App 市集作 App 排名，你可以直接使用下載比例或下載量。
+
 如果你在偵測垃圾郵件，那就過濾那些曾經發送過垃圾郵件的發行商（publishers）。
+
 也**不要擔心去使用人工編輯**。（按：工人智慧是很厲害的）
+
 如果你需要替聯絡人排名，那就將最近使用的排最前面（或甚至按照字母排序）。
+
 如果機器學習對你的產品不是絕對必要，直到你有資料之前都不要使用它。
 
 > 按：有權力決定是否使用 ML 的人，必須非常清楚目前擁有的資料，在 heuristic 與 ML 分別能達到的效益
+
 > 如果對資料不夠熟悉，那就先拿來玩一玩、嘗一嘗，看能怎麼運用它
+
 > 沒有資料就開始使用 ML，就像你完全不知道有什麼食材，卻想做出一頓大餐一樣不切實際
 
 <sup>[Google Research Blog - The 280-Year-Old Algorithm Inside Google Trips](https://research.googleblog.com/2016/09/the-280-year-old-algorithm-inside.html?m=1)</sup>

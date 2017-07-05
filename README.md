@@ -26,6 +26,8 @@
 
 * 「能通过试验把用户分组并整合数据的试验框架非常重要」原文為 "can group users into buckets and aggregate statistics by experiment, is important."
 
+* 訓練-應用偏差（training-serving skew）甚至沒有翻譯到。
+
 不過仍然很感謝有這樣的中文資源（而台灣卻很少）
 
 而作為一個參與過部分機器學習（不管是直接或間接）開發的工程師

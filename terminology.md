@@ -6,8 +6,6 @@
 
 * Heuristic: 正式翻譯為啟發法，或稱經驗法則。一般會認為是簡單有效的直覺作法，但不保證正確。
 
-* Pipeline: 直譯為管線。可以是指資料流，廣義來說也可以指資料流經過的整個系統。
-
 以下是原文的名詞解釋：
 
 * Instance: 你想要預測的事物。舉例來說，Instance 可能是一個網頁，你想要把它「分類」為「與貓有關」或「與貓無關」。
@@ -26,5 +24,5 @@
 
 * Objective: 一個你的演算法試著去優化的 metric。
 
-* Pipeline: 泛指圍繞在 ML 演算法的基礎建設（infrastructure）。包含從前端收集資料、將它們放到 training data file 裏、訓練一個或多個 model，以及將 model 輸出到 production 環境上。（按：就像食品的製造鏈一樣）
+* Pipeline: 泛指圍繞在 ML 演算法的基礎建設（infrastructure）。包含從前端收集資料、將它們放到 training data file 裏、訓練一個或多個 model，以及將 model 輸出到 production 環境上。（按：可以是指資料流，廣義來說也可以指資料流經過的整個系統，就像食品的製造鏈一樣）
 

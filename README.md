@@ -1,12 +1,45 @@
-# google-rules-of-machine-learning-traditional-chinese
-Traditional Chinese translation of Google's "Rules of Machine Learning"
-# Google's *43 Rules of Machine Learning*
+# 繁中版「機器學習法則」
 
-Github mirror of [M. Zinkevich's](http://martin.zinkevich.org/)  great ["Rules of Machine Learning"](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf) style guide, with extra goodness.
+* 編/譯：[leafwind](https://medium.com/@leafwind)
 
------
+* Git Book [URL](https://leafwind.gitbooks.io/rules-of-machine-learning-traditional-chinese/content/)
 
+## 簡介與免責聲明
 
-**Note**: *Asterisk* (\*) footnotes are my own. *Numbered* footnotes are Martin's.
+這系列文章原文為 Martin Zinkevich (Research Scientist @ Google) 所著之 "Rules of Machine Learning"(0)
+
+看了一部分之後覺得非常適合推廣（尤其「你會面對的絕大多數問題是工程問題」這一點深得我心）
+
+於是想要深入細讀、做些筆記
+
+過程中發現有雷鋒網翻譯的簡中版(2)，但不盡人意
+
+原因除了用詞文化差異之外，過度地翻譯成中文也失去了部分原文的意思
+
+以至於出現一些「每個詞都懂，但是拼湊起來的句子就看不懂」的情況。
+
+比如：
+
+* 「关乎启动和重复」原文是 "launching and iterating (a product)"
+
+* 「设置你的第一个流水线」原文是 "deploy your first pipeline"
+
+* 「能通过试验把用户分组并整合数据的试验框架非常重要」原文為 "can group users into buckets and aggregate statistics by experiment, is important."
+
+不過仍然很感謝有這樣的中文資源（而台灣卻很少）
+
+而作為一個參與過部分機器學習（不管是直接或間接）開發的工程師
+
+試著儘量在維持原意的情況下，以繁體中文翻譯、排版，並將一些原文較為精簡的敘述，補上（以個人經驗推斷的）詳細說明
+
+個人所知所學有限，若有好心人發現錯誤或艱澀難懂之處，還請多不吝指教
+
+# References:
+
+0. ["Rules of Machine Learning"](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf) by [M. Zinkevich](http://martin.zinkevich.org/)
+
+1. [Google's 43 Rules of Machine Learning](https://github.com/thundergolfer/google-rules-of-machine-learning)
+
+2. [谷歌机器学习白皮书全解析 43条黄金法则（一）](https://www.leiphone.com/news/201701/FmC6Z2X6UeCvgGEV.html)
 
 

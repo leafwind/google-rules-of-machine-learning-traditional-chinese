@@ -1,4 +1,4 @@
-# 繁中版「機器學習法則」
+# 《機器學習法則》繁中版
 
 * 原文：["Rules of Machine Learning"](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf)
 

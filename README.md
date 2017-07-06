@@ -24,11 +24,7 @@
 
 另外也感謝有國外的好心人整理成純文字版的 [Google's 43 Rules of Machine Learning](https://github.com/thundergolfer/google-rules-of-machine-learning) 讓翻譯比較容易
 
-
-
-
-
-簡中版
+## 簡中版
 
 過程中發現有雷鋒網翻譯的簡中版 [谷歌机器学习白皮书全解析 43条黄金法则（一）](https://www.leiphone.com/news/201701/FmC6Z2X6UeCvgGEV.html)
 

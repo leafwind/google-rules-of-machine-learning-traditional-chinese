@@ -1,8 +1,6 @@
 # 概述
 
-為了做出好產品：
-
-> do machine learning like the great engineer you are, not like the great machine learning expert you aren’t.
+> To make great products: do machine learning like the great engineer you are, not like the great machine learning expert you aren’t.
 
 事實上，**你將會面對的絕大多數問題都是工程問題（engineering problems）。**
 

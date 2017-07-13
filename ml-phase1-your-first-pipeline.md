@@ -61,9 +61,11 @@ was still dropping old posts. Another common pattern is to only log data that wa
 user, because all the negative examples have been dropped. A similar issue occurred in Play. While working on Play Apps Home, a new pipeline was created that also contained examples  
 from two other landing pages \(Play Games Home and Play Home Home\) without any feature to disambiguate where each example came from.
 
-#### Rule 7 - Turn heuristics into features, or handle them externally.
+#### Rule 7 - 將啟發式/捷思法轉換成特徵，或在外部處理它們
 
-Usually the problems that machine learning is trying to solve are not completely new. There is an existing system for ranking, or classifying, or whatever problem you are trying to solve. This means that there are a bunch of rules and heuristics. These same heuristics can give you a lift when tweaked with machine learning. Your heuristics should be mined for whatever information they have, for two reasons. First, the transition to a machine learned system will be smoother. Second, usually those rules contain a lot of the intuition about the system you don’t want to throw away. There are four ways you can use an existing heuristic:
+通常 ML 試圖解決的問題都不是全新的。排名 (ranking)、分類 (classifying) 或任何其他問題，都有現成的系統在解決。這代表著有一大堆的規則或啟發式方法可用。這些類似的啟發式作法可以在調整 ML 演算法的時候順道載你一程 (give you a lift)。
+
+這些啟發式作法應該要被挖掘 (mined) 出任何它們所擁有的資訊，這出於兩個原因：第一，這將會讓你在轉換到 ML 系統的過程中比較平滑、順利；第二，通常這些規則包含了關於這個系統所需的大量直覺 (intuition)，而你不會想把它們丟掉。有四種可以利用現成啟發式的方法：
 
 1. Preprocess using the heuristic. If the feature is incredibly awesome, then this is an option. For example, if, in a spam filter, the sender has already been blacklisted, don’t try
    to relearn what “blacklisted” means. Block the message. This approach makes the most sense in binary classification tasks.

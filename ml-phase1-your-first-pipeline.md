@@ -35,18 +35,20 @@
 ### Rule 5 - 將測試基礎建設與測試機器學習分開
 
 確保基礎建設是可以測試的，並且系統的學習部分是被封裝的 (encapsulated) 以便你可以測試周邊的所有環境，特別是：
-Mae sure that the infrastructure is testable, and that the learning parts of the system are
-encapsulated so that you can test everything around it. Specifically:
 
-1. Test getting data into the algorithm. Check that feature columns that should be populated
-are populated. Where privacy permits, manually inspect the input to your training algorithm. If possible, check statistics in your pipeline in comparison to elsewhere, such
-as RASTA.
+1. 測試將 data 餵進演算法。檢查該被填的 feature columns 有被填好。如果隱私政策允許，手動檢查你的訓練演算法的輸入。
 
-2. Test getting models out of the training algorithm. Make sure
-that the model in your
-training environment gives the same score as the model in your serving environment (see Rule **#37**). Machine learning has an element of unpredictability, so make sure that you have tests for the code for creating examples in training and serving, and that you can load and use a fixed model during serving. Also, it is important to understand your data: see [Practical Advice for Analysis of Large, Complex Data Sets.](http://www.unofficialgoogledatascience.com/2016/10/practical-advice-for-analysis-of-large.html)
+  如果可能，檢查 pipeline 裡面的統計數據、跟其他地方做比較，像是 RASTA。
 
-#### Rule 6 - Be careful about dropped data when copying pipelines.
+  > 按：關於 RASTA，我找到的解釋是 Google 的一套 A/B testing experiment framework，它可以分流 production 流量並讓你對不同屬性的流量做切割。所以這裡的意思應該是：找一些類似（或同樣來源）的 pipeline 去驗證一下你的演算法拿到的數據有沒有異常。
+  
+2. 測試將模型搬出訓練演算法。確保模型能在 serving environment  給出跟訓練環境同樣的成效 (see Rule **#37**)。
+
+機器學習有不可預測性，所以確保你有測試 have tests for the code for creating examples in training and serving, and that you can load and use a fixed model during serving
+
+並且，了解你的資料也是很重要的，參考 [Practical Advice for Analysis of Large, Complex Data Sets.](http://www.unofficialgoogledatascience.com/2016/10/practical-advice-for-analysis-of-large.html)
+
+### Rule 6 - 小心複製 pipeline 時遺漏了資料
 
 Often we create a pipeline by copying an existing pipeline (i.e. [cargo cult programming](https://en.wikipedia.org/wiki/Cargo_cult_programming)), and the old pipeline drops data that we need for the new pipeline. For example, the pipeline for Google
 Plus What’s Hot drops older posts (because it is trying to rank fresh posts). This pipeline was copied to use for Google Plus Stream, where older posts are still meaningful, but the pipeline

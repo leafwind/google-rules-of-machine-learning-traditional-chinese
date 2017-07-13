@@ -1,31 +1,41 @@
 # 你的第一條 Pipeline
 
-對你的第一條 pipeline，專注在你的系統基礎建設(infrastructure)上。
+對你的第一條 pipeline，專注在你的系統基礎建設 (infrastructure)   上。
 
-雖然去構思那些你將要去做的、天馬行空的 ML 演算法很有趣，但如果無法在一開始就信任你的 pipeline，你將會很難搞清楚發生什麼事。
+雖然去構思那些你將要去做的天馬行空 ML 演算法很有趣，但如果無法在一開始就信任你的 pipeline，你將會很難搞清楚發生什麼事。
 
-## Rule 4 - 確保第一個模型(model)簡單，並做好正確的基礎建設
+### Rule 4 - 確保第一個模型 (model) 簡單，並做好正確的基礎建設
 
-第一個模型為你的產品提供了最大的推進，所以它不需要很花俏，但你將會遇到很多預期之外的基礎建設問題。
-在任何人可以使用你那時髦的新 ML 系統之前，你必須決定：
+第一個模型為你的產品提供了最大的推進 (boost)，所以它不需要很花俏，但你將會遇到很多預期之外的基礎建設問題。
 
-1. How to get examples to your learning algorithm.
-2. A first cut as to what “good” and “bad” mean to your system.
-3. How to integrate your model into your application. You can either apply the model live, or pre­compute the model on examples offline and store the results in a table. For example,
-you might want to pre­classify web pages and store the results in a table, but you might want to classify chat messages live.
+在任何人可以使用你那很 cooool 的新 ML 系統之前，你必須決定：
 
-Choosing simple features makes it easier to ensure that:
+1. 如何取得 examples (i.e. training data) 給你的學習演算法使用。
 
-1. The features reach your learning algorithm correctly.
-2. The model learns reasonable weights.
-3. The features reach your model in the server correctly.
+2. 初步決定「好」跟「壞」在你的系統中指的是什麼。
 
-Once you have a system that does these three things reliably, you have done most of the work. Your simple model provides you with baseline metrics and a baseline behavior that you can use
-to test more complex models. Some teams aim for a “neutral” first launch: a first launch that explicitly de-­prioritizes machine learning gains, to avoid getting distracted.
+3. 如何將 model 整合到你的應用？
+你可以將 model 應用到線上，或是預先在線下算好並存到一張表。比如你可以預先分類好網頁，將結果存起來給應用查詢；但若是要分類聊天訊息，你可能會需要在線上即時分類。
 
-#### Rule 5 - Test the infrastructure independently from the machine learning.
+選擇簡單的特徵 (features) 會更容易保證：
 
-Make sure that the infrastructure is testable, and that the learning parts of the system are
+1. 這些特徵正確地「到達」(reach) 你的演算法
+  > 按：無法正確到達的情況，指的就是特徵生錯了，或是特徵更新失敗等情況。至於什麼叫做「簡單」的特徵？則是你不需要將特徵做複雜的轉換，或是經過很多不同的系統、也不需要仰賴額外的系統 input，以致於在中間增加出差錯的可能
+
+2. 模型學到合理的權重 (weights)。
+  > 按：承上，壞掉的特徵常會讓你的權重爆掉，如果連權重都不合理，那後面都會是做白工。
+  
+3. 這些特徵正確地在「伺服器上」到達你的演算法
+  > 按：特別強調這點，表示作者很清楚 production 環境有太多變因。
+
+一旦你有一個能可靠地做到這三點的系統，你已經做好大部分的工作了。你的簡單模型提供了最基本的指標跟行為，以讓你可以用來測試更多複雜的模型。
+
+有些團隊（甚至）會將目標訂在「中性」的第一次推出（系統）-- 也就是第一次推出的時候，特別不將機器學習的成效擺在第一位，以避免分心。
+
+### Rule 5 - 將測試基礎建設與測試機器學習分開
+
+確保基礎建設是可以測試的，並且系統的學習部分是被封裝的 (encapsulated) 以便你可以測試周邊的所有環境，特別是：
+Mae sure that the infrastructure is testable, and that the learning parts of the system are
 encapsulated so that you can test everything around it. Specifically:
 
 1. Test getting data into the algorithm. Check that feature columns that should be populated

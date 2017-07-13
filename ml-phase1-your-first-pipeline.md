@@ -1,13 +1,13 @@
-## Your First Pipeline
+# 你的第一條 Pipeline
 
-> Focus on your system infrastructure for your first pipeline. While it is fun to think about all the
-imaginative machine learning you are going to do, it will be hard to figure out what is happening
-if you don’t first trust your pipeline.
+對你的第一條 pipeline，專注在你的系統基礎建設(infrastructure)上。
 
-#### Rule 4 - Keep the first model simple and get the infrastructure right.
+雖然去構思那些你將要去做的、天馬行空的 ML 演算法很有趣，但如果無法在一開始就信任你的 pipeline，你將會很難搞清楚發生什麼事。
 
-The first model provides the biggest boost to your product, so it doesn't need to be fancy. But you will run into many more infrastructure issues than you expect. Before anyone can use your
-fancy new machine learning system, you have to determine:
+## Rule 4 - 確保第一個模型(model)簡單，並做好正確的基礎建設
+
+第一個模型為你的產品提供了最大的推進，所以它不需要很花俏，但你將會遇到很多預期之外的基礎建設問題。
+在任何人可以使用你那時髦的新 ML 系統之前，你必須決定：
 
 1. How to get examples to your learning algorithm.
 2. A first cut as to what “good” and “bad” mean to your system.

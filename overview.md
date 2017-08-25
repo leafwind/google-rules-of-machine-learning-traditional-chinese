@@ -42,7 +42,7 @@
 
 1. 第一部分會幫助你瞭解：建構一個 ML 系統的時機是否成熟。
 
-2. 第二部分是關於佈署（deploying）你的第一版pipeline.
+2. 第二部分是關於佈署（deploying）你的第一版 pipeline.
 
 3. 第三部分是關於啟動（launching）產品與疊代（iterating）產品，當增加新 feature 到你的 pipeline 時，如何去評估模型和訓練-應用偏差（training-serving skew）。
 
